@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Mortgage Dept",
+  "description": "Locations for the company's mortgage department",
+  "type": "object",
+  "properties": {
+    "propertyId": {
+      "description": "The unique identifier for the mortgage dept",
+      "type": "number"
+    },
+    "bankId": {
+      "description": "The unique identifier for the mortgagor's parent company",
+      "type": "number"
+    },
+    "centralPhoneNumber": {
+      "description": "The mortgage dept's central phone number",
+      "type": "string"
+    },
+    "locations": {
+      "type": "array",
+      "contactInfo" : {
+        "type": "object",
+        "properties":{
+          "locationId": {
+            "description": "The unique identifier for the branch/office location",
+            "type": "number"
+          },
+          "name": {
+            "description": "The branch's name",
+            "type": "string"
+          },
+          "streetAddress1": {
+            "description": "The branch's street address 1",
+            "type": "string"
+          },
+          "streetAddress2": {
+            "description": "The branch's street address 2",
+            "type": "string"
+          },
+          "city": {
+            "description": "The branch's city",
+            "type": "string"
+          },
+          "region": {
+            "description": "The branch's region",
+            "type": "string"
+          },
+          "postalCode": {
+            "description": "The branch's postal/zip code",
+            "type": "string"
+          },
+          "phoneNumber": {
+            "description": "The branch's phone number",
+            "type": "string"
+          },
+          "openFrom": {
+            "description": "The branch's opening time",
+            "type": "string"
+          },
+          "openTo": {
+            "description": "The branch's closing time",
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": ["streetAddress1", "city", "region"]
+}

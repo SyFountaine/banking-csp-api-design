@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Borrower",
+  "description": "A potential or actual mortgage borrower",
+  "type": "object",
+  "properties": {
+    "borrowerId": {
+      "description": "The unique identifier for a borrower",
+      "type": "number"
+    },
+    "userId": {
+      "description": "The unique identifier for a borrower's user access account",
+      "type": "number"
+    },
+    "title": {
+      "description": "A reference to the borrower's title",
+      "type": "number"
+    },
+    "firstName": {
+      "description": "The borrower's first name",
+      "type": "string"
+    },
+    "middleName": {
+      "description": "The borrower's middle name",
+      "type": "string"
+    },
+    "firstLast": {
+      "description": "The borrower's last name",
+      "type": "string"
+    },
+    "mobileNumber": {
+      "description": "The borrower's mobile phone number",
+      "type": "string"
+    },
+    "taxId": {
+      "description": "The borrower's taxpayer Id",
+      "type": "string"
+    },
+    "maritalStatus": {
+      "description": "A reference to the borrower's marital status",
+      "type": "number"
+    },
+    "childrenCount": {
+      "description": "A count of the borrower's children",
+      "type": "number"
+    },
+    "postalCode": {
+      "description": "The borrower's current postal code",
+      "type": "string"
+    },
+    "firstTimeHomeBuyer": {
+      "description": "A flag indicating that the buyer is a first-time home buyer",
+      "type": "boolean"
+    },
+    "hasRealtor": {
+      "description": "Does the borrower have an existing realtor?",
+      "type": "boolean"
+    },
+    "realtorName": {
+      "description": "The name of the borrower's realtor",
+      "type": "string"
+    },
+    "hasLoanOfficer": {
+      "description": "Does the borrower have an existing loan officer?",
+      "type": "boolean"
+    },
+    "loanOfficerName": {
+      "description": "The name of the borrower's loan officer",
+      "type": "string"
+    },
+    "isCitizen": {
+      "description": "Is the borrower a citizen or legal resident?",
+      "type": "boolean"
+    }
+  },
+  "required": ["firstName", "lastName"]
+}

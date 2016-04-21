@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Appointment",
+  "description": "The object used for the borrower to request an appointment",
+  "type": "object",
+  "properties": {
+    "appointmentId": {
+      "description": "The unique identifier for the appointment",
+      "type": "number"
+    },
+    "locationId": {
+      "description": "The unique identifier for the branch/office where the appointment will occur",
+      "type": "number"
+    },
+    "borrowerId": {
+      "description": "The unique identifier for borrower requesting an appointment",
+      "type": "number"
+    },
+    "borrowerPhoneNumber": {
+      "description": "The borrower's contact number for this appointment",
+      "type": "string"
+    },
+    "requestedDate":{
+      "description": "The date of the borrower's requested appointment",
+      "type": "string"
+    },
+    "requestedTime":{
+      "description": "The time of the borrower's requested appointment",
+      "type": "string"
+    }
+  },
+  "required": ["borrowerPhoneNumber", "requestedDate", "requestedTime"]
+}

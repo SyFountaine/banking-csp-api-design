@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Property",
+  "description": "The property to be bought or refinanced",
+  "type": "object",
+  "properties": {
+    "propertyId": {
+      "description": "The unique identifier for a piece of realestate",
+      "type": "number"
+    },
+    "borrowerId": {
+      "description": "The unique identifier for a property's borrower",
+      "type": "number"
+    },
+    "mls": {
+      "description": "The property's multiple listing service number",
+      "type": "string"
+    },
+    "streetAddress1": {
+      "description": "The subject property's street address 1",
+      "type": "string"
+    },
+    "streetAddress2": {
+      "description": "The subject property's street address 2",
+      "type": "string"
+    },
+    "city": {
+      "description": "The subject property's city",
+      "type": "string"
+    },
+    "region": {
+      "description": "The subject property's state/region",
+      "type": "string"
+    },
+    "postalCode": {
+      "description": "The subject property's postal code",
+      "type": "string"
+    },
+    "homeType": {
+      "description": "A reference to the subject property's type (condo, coop, single family detached,...)",
+      "type": "number"
+    },
+    "isPrimaryResidence": {
+      "description": "Will the subject property be the borrower's primary residence?",
+      "type": "boolean"
+    },
+    "yearBuilt": {
+      "description": "The subject property's year of completion",
+      "type": "number"
+    }
+  },
+  "required": ["streetAddress1", "city", "region"]
+}
